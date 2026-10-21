@@ -63,6 +63,9 @@ def main():
                             success = update_premium(device_id)
                             
                             if success:
+                                # ১. লোডিং বন্ধ করার সিগন্যাল
+                                requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "✅ Approved!"})
+                                # ২. মেসেজ পরিবর্তন করা
                                 requests.post(f"{API_URL}editMessageText", json={
                                     "chat_id": CHAT_ID,
                                     "message_id": msg_id,
@@ -72,6 +75,7 @@ def main():
                             else:
                                 requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "❌ Failed to update GitHub"})
                         elif data.startswith("reject_"):
+                            requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "❌ Rejected"})
                             requests.post(f"{API_URL}editMessageText", json={
                                 "chat_id": CHAT_ID,
                                 "message_id": msg_id,
