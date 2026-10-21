@@ -64,31 +64,30 @@ def main():
                         data = cb['data']
                         msg_id = cb['message']['message_id']
                         
+                        # ১. টেলিগ্রামকে সাথে সাথে উত্তর দিন (লোডিং বন্ধ করুন)
+                        requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "✅ Processing..."}, timeout=5)
+                        
                         if data.startswith("approve_"):
-                            # ১. টেলিগ্রামের লোডিং বন্ধ করা (সাথে সাথে উত্তর দেওয়া)
-                            requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "✅ Approved!"}, timeout=10)
-                            
-                            # ২. গিটহাবে ডেটা পাঠানো
                             device_id = data.replace("approve_", "")
+                            # ২. গিটহাবে ডেটা সেভ করুন
                             update_premium(device_id)
                             
-                            # ৩. মেসেজ পরিবর্তন করা
+                            # ৩. মেসেজ পরিবর্তন করুন
                             requests.post(f"{API_URL}editMessageText", json={
                                 "chat_id": CHAT_ID,
                                 "message_id": msg_id,
                                 "text": f"✅ Approved Premium for Device: {device_id}",
                                 "reply_markup": {"inline_keyboard": []}
                             }, timeout=10)
-                            
+                                
                         elif data.startswith("reject_"):
-                            requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "❌ Rejected"}, timeout=10)
                             requests.post(f"{API_URL}editMessageText", json={
                                 "chat_id": CHAT_ID,
                                 "message_id": msg_id,
                                 "text": f"❌ Rejected Payment",
                                 "reply_markup": {"inline_keyboard": []}
                             }, timeout=10)
-            time.sleep(1)
+            time.sleep(2)
         except Exception as e:
             print(f"Error: {e}", flush=True)
             time.sleep(5)
