@@ -11,10 +11,16 @@ REPO = "tarekudb/focusguard-releases"
 PREMIUM_FILE = "premium.json"
 API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/"
 
+# টেলিগ্রামের পুরনো কানেকশন বা ওয়েবহুক মুছে ফেলা (যাতে কনফ্লিক্ট না হয়)
+try:
+    requests.get(f"{API_URL}deleteWebhook?drop_pending_updates=true", timeout=10)
+except Exception as e:
+    print(f"Webhook delete error: {e}")
+
 def get_premium_data():
     headers = {"Authorization": f"token {GH_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     url = f"https://api.github.com/repos/{REPO}/contents/{PREMIUM_FILE}"
-    r = requests.get(url, headers=headers)
+    r = requests.get(url, headers=headers, timeout=10)
     if r.status_code == 200:
         data = r.json()
         content = base64.b64decode(data['content']).decode('utf-8')
@@ -38,17 +44,19 @@ def update_premium(device_id):
     if sha:
         payload["sha"] = sha
     
-    r = requests.put(url, headers=headers, json=payload)
+    r = requests.put(url, headers=headers, json=payload, timeout=10)
     return r.status_code in [200, 201]
 
 def main():
+    print("Bot started successfully. Waiting for messages...")
     last_update_id = 0
-    end_time = time.time() + (5 * 3600) 
     
-    while time.time() < end_time:
+    while True:
         try:
-            url = f"{API_URL}getUpdates?offset={last_update_id + 1}&timeout=30"
-            r = requests.get(url, timeout=35)
+            # ২০ সেকেন্ডের টাইমআউট দেওয়া হলো
+            url = f"{API_URL}getUpdates?offset={last_update_id + 1}&timeout=20"
+            r = requests.get(url, timeout=25)
+            
             if r.status_code == 200:
                 updates = r.json().get('result', [])
                 for update in updates:
@@ -63,29 +71,29 @@ def main():
                             success = update_premium(device_id)
                             
                             if success:
-                                # ১. লোডিং বন্ধ করার সিগন্যাল
-                                requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "✅ Approved!"})
-                                # ২. মেসেজ পরিবর্তন করা
+                                # টেলিগ্রামের লোডিং বন্ধ করার সিগন্যাল
+                                requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "✅ Approved!"}, timeout=10)
+                                # মেসেজ পরিবর্তন করা
                                 requests.post(f"{API_URL}editMessageText", json={
                                     "chat_id": CHAT_ID,
                                     "message_id": msg_id,
                                     "text": f"✅ Approved Premium for Device: {device_id}",
                                     "reply_markup": {"inline_keyboard": []}
-                                })
+                                }, timeout=10)
                             else:
-                                requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "❌ Failed to update GitHub"})
+                                requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "❌ Failed to update GitHub"}, timeout=10)
                         elif data.startswith("reject_"):
-                            requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "❌ Rejected"})
+                            requests.post(f"{API_URL}answerCallbackQuery", json={"callback_query_id": cb['id'], "text": "❌ Rejected"}, timeout=10)
                             requests.post(f"{API_URL}editMessageText", json={
                                 "chat_id": CHAT_ID,
                                 "message_id": msg_id,
                                 "text": f"❌ Rejected Payment",
                                 "reply_markup": {"inline_keyboard": []}
-                            })
+                            }, timeout=10)
+            time.sleep(2)
         except Exception as e:
-            print(e)
+            print(f"Error: {e}")
             time.sleep(5)
-        time.sleep(1)
 
 if __name__ == "__main__":
     main()
