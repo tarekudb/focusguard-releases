@@ -1,7 +1,7 @@
 {
-  "code": 3,
-  "name": "1.2",
-  "notes": "Permanent search & status blocks for Telegram, WhatsApp and IMO. Community tab added.",
-  "notes_bn": "টেলিগ্রাম, হোয়াটসঅ্যাপ ও IMO-তে স্থায়ী সার্চ ও স্ট্যাটাস ব্লক। কমিউনিটি ট্যাব যুক্ত।",
-  "sha256": "6b99fdd2ffb34c11564e7800fd823ee1f64058a8d9fabf362f17f18473f2c573"
+  "code": 27,
+  "name": "1.3",
+  "notes": "Instant Premium activation via bKash TrxID. Improved payment security and a fresh new Premium UI.",
+  "notes_bn": "বিকাশ TrxID-এর মাধ্যমে দ্রুত প্রিমিয়াম অ্যাক্টিভেশন। পেমেন্টের নিরাপত্তা বৃদ্ধি এবং প্রিমিয়াম স্ক্রিনের নতুন ডিজাইন।",
+  "sha256": "9bb250ba317dcbe61821b43ab56ca76d8d51873cd638c62f0c161d7157441e78"
 }
