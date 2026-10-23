@@ -1,7 +1,7 @@
 {
-  "code": 27,
-  "name": "1.3",
-  "notes": "Instant Premium activation via bKash TrxID. Improved payment security and a fresh new Premium UI.",
-  "notes_bn": "বিকাশ TrxID-এর মাধ্যমে দ্রুত প্রিমিয়াম অ্যাক্টিভেশন। পেমেন্টের নিরাপত্তা বৃদ্ধি এবং প্রিমিয়াম স্ক্রিনের নতুন ডিজাইন।",
-  "sha256": "9bb250ba317dcbe61821b43ab56ca76d8d51873cd638c62f0c161d7157441e78"
+  "code": 33,
+  "name": "1.33",
+  "notes": "New: automatic bKash payment verification, redesigned Premium page, optional Telegram search / WhatsApp status / IMO Voice Club blocks (24-hour decision time), faster Premium activation.",
+  "notes_bn": "নতুন: স্বয়ংক্রিয় বিকাশ পেমেন্ট যাচাই, নতুন প্রিমিয়াম পাতা, ইচ্ছাধীন টেলিগ্রাম সার্চ / হোয়াটসঅ্যাপ স্ট্যাটাস / IMO ভয়েস ক্লাব ব্লক (২৪ ঘণ্টা ভাবার সময়), দ্রুত প্রিমিয়াম সক্রিয়করণ।",
+  "sha256": "404e3704f45615da2b3dda772d6aac4913e64207eb0350999cbf76c4de71cb8d"
 }
