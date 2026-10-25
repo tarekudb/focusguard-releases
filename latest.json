@@ -1,7 +1,7 @@
 {
- "code": 49,
- "name": "1.49",
- "notes": "Blocked 2.5M+ adult and 2M+ ad domains. Auto-skip YouTube ads. Optional blocks for Telegram search, WhatsApp status, and IMO Voice Club. Uninstall protection (optional). Bug fixes and performance improvements.",
- "notes_bn": "২৫ লক্ষ+ এডাল্ট এবং ২০ লক্ষ+ বিজ্ঞাপন ডোমেইন ব্লক। ইউটিউব বিজ্ঞাপন অটো-স্কিপ। টেলিগ্রাম সার্চ, হোয়াটসঅ্যাপ স্ট্যাটাস এবং IMO ভয়েস ক্লাব ব্লক (ইচ্ছাধীন)। আনইনস্টল সুরক্ষা (ইচ্ছাধীন)। বাগ ফিক্স ও পারফরম্যান্স উন্নতি।",
- "sha256": "47222d16646a445e0972f1c768243eee9b89fcaddfaf9e2b2177c24e6ae30192"
+ "code": 52,
+ "name": "1.52",
+ "notes": "Improved compatibility with banking apps (including Rocket) and added copy/share buttons for logs.",
+ "notes_bn": "Rocket-সহ ব্যাংকিং অ্যাপের সঙ্গে সামঞ্জস্য ও লগ কপি/শেয়ার বোতাম।",
+ "sha256": "2d1546af6d2b68532c8434cd8826f06814079f1a6f630b93d97c7194affc25de"
 }
