@@ -1,7 +1,7 @@
 {
- "code": 52,
- "name": "1.52",
- "notes": "Improved compatibility with banking apps (including Rocket) and added copy/share buttons for logs.",
- "notes_bn": "Rocket-সহ ব্যাংকিং অ্যাপের সঙ্গে সামঞ্জস্য ও লগ কপি/শেয়ার বোতাম।",
- "sha256": "2d1546af6d2b68532c8434cd8826f06814079f1a6f630b93d97c7194affc25de"
+ "code": 66,
+ "name": "1.66",
+ "notes": "Smaller app (6.6 MB), faster Ultra power-saving block and YouTube skip, equal home tiles, fixes.",
+ "notes_bn": "অ্যাপ ছোট (৬.৬ MB), আল্ট্রা পাওয়ার সেভিং আটকানো ও YouTube skip দ্রুত, হোমের টাইল সমান, ত্রুটি সংশোধন।",
+ "sha256": "89563f29a5a41e0596235703cd29799c379c533aa5958d6a807a05d43e204c83"
 }
