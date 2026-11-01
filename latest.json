@@ -1,7 +1,7 @@
 {
- "code": 66,
- "name": "1.66",
+ "code": 67,
+ "name": "1.67",
  "notes": "Smaller app (6.6 MB), faster Ultra power-saving block and YouTube skip, equal home tiles, fixes.",
  "notes_bn": "অ্যাপ ছোট (৬.৬ MB), আল্ট্রা পাওয়ার সেভিং আটকানো ও YouTube skip দ্রুত, হোমের টাইল সমান, ত্রুটি সংশোধন।",
- "sha256": "89563f29a5a41e0596235703cd29799c379c533aa5958d6a807a05d43e204c83"
+ "sha256": "176928306a51e0c5109e23966b92537290fa0c6ec34aa301d86e0e0023305847"
 }
