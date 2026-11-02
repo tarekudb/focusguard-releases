@@ -1,7 +1,7 @@
 {
- "code": 67,
- "name": "1.67",
- "notes": "Smaller app (6.6 MB), faster Ultra power-saving block and YouTube skip, equal home tiles, fixes.",
- "notes_bn": "অ্যাপ ছোট (৬.৬ MB), আল্ট্রা পাওয়ার সেভিং আটকানো ও YouTube skip দ্রুত, হোমের টাইল সমান, ত্রুটি সংশোধন।",
- "sha256": "176928306a51e0c5109e23966b92537290fa0c6ec34aa301d86e0e0023305847"
+ "code": 68,
+ "name": "1.68",
+ "notes": "Quick settings panel works during lock; faster Ultra block and YouTube skip; fixes.",
+ "notes_bn": "লকের সময় কুইক সেটিং প্যানেল চলে; আল্ট্রা ও YouTube skip দ্রুত; ত্রুটি সংশোধন।",
+ "sha256": "8d255f9e5128180d0397eb71e8cc2b5b2647f9af8a9eb36f630696e857ff5f98"
 }
