@@ -1,7 +1,7 @@
 {
- "code": 75,
- "name": "1.75",
- "notes": "New: YouTube Shorts and Facebook Reels blocks, 30-day daily usage history, Banking mode. Fix: Mindful reminder repeating.",
- "notes_bn": "নতুন: ইউটিউব শর্টস ও ফেসবুক রিলস ব্লক, ৩০ দিনের দৈনিক ব্যবহার, ব্যাংকিং মোড। সংশোধন: মাইন্ডফুল রিমাইন্ডার বারবার আসা।",
- "sha256": "770ce48159784ab78f835b6004b7da84e61bb106d64916f0592be41c4d11178c"
+ "code": 76,
+ "name": "1.76",
+ "notes": "Banking mode: simple steps and a reminder for phones without the special permission.",
+ "notes_bn": "ব্যাংকিং মোড: বিশেষ অনুমতি ছাড়া ফোনের জন্য সহজ নির্দেশ ও রিমাইন্ডার।",
+ "sha256": "ced920e7780ca40fff198f12aedbf65a47ed3f6e4d383b77fef7460fe1a3dbf7"
 }
