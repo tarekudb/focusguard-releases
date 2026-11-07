@@ -1,7 +1,7 @@
 {
- "code": 68,
- "name": "1.68",
- "notes": "Quick settings panel works during lock; faster Ultra block and YouTube skip; fixes.",
- "notes_bn": "লকের সময় কুইক সেটিং প্যানেল চলে; আল্ট্রা ও YouTube skip দ্রুত; ত্রুটি সংশোধন।",
- "sha256": "8d255f9e5128180d0397eb71e8cc2b5b2647f9af8a9eb36f630696e857ff5f98"
+ "code": 75,
+ "name": "1.75",
+ "notes": "New: YouTube Shorts and Facebook Reels blocks, 30-day daily usage history, Banking mode. Fix: Mindful reminder repeating.",
+ "notes_bn": "নতুন: ইউটিউব শর্টস ও ফেসবুক রিলস ব্লক, ৩০ দিনের দৈনিক ব্যবহার, ব্যাংকিং মোড। সংশোধন: মাইন্ডফুল রিমাইন্ডার বারবার আসা।",
+ "sha256": "770ce48159784ab78f835b6004b7da84e61bb106d64916f0592be41c4d11178c"
 }
