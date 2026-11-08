@@ -1,7 +1,7 @@
 {
- "code": 77,
- "name": "1.77",
- "notes": "Fix: typing a medicine name like \"xinc B\" no longer locks the phone by mistake. Added adult-attempt reasons to the log.",
- "notes_bn": "সংশোধন: \"xinc B\"-এর মতো ওষুধের নাম লেখার সময় ভুল করে ফোন লক হওয়া ঠিক করা হয়েছে। লগে অ্যাডাল্ট চেষ্টার কারণ যোগ হয়েছে।",
+ "code": 78,
+ "name": "1.78",
+ "notes": "New: optional power menu block. Fix: Ultra power saving block now also works during a phone call.",
+ "notes_bn": "নতুন: ঐচ্ছিক পাওয়ার মেনু ব্লক। সংশোধন: ফোন কল চলাকালীনও আল্ট্রা সেভিং ব্লক কাজ করবে।",
  "sha256": "8e7c660e9c0f177dd8150fab78b91bb387fa1a06b560bc32abc695eecb79f0c6"
 }
