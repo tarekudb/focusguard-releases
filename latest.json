@@ -1,7 +1,7 @@
 {
- "code": 78,
- "name": "1.78",
- "notes": "New: optional power menu block. Fix: Ultra power saving block now also works during a phone call.",
- "notes_bn": "নতুন: ঐচ্ছিক পাওয়ার মেনু ব্লক। সংশোধন: ফোন কল চলাকালীনও আল্ট্রা সেভিং ব্লক কাজ করবে।",
- "sha256": "8e7c660e9c0f177dd8150fab78b91bb387fa1a06b560bc32abc695eecb79f0c6"
+ "code": 79,
+ "name": "1.79",
+ "notes": "New: optional power menu block (power off / restart).",
+ "notes_bn": "নতুন: ঐচ্ছিক পাওয়ার মেনু ব্লক (বন্ধ/রিস্টার্ট)।",
+ "sha256": "57183b80f8ce6cfc5afc29e4482da0c2893b64de28ebcd628eb22fb5ea248988"
 }
