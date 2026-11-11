@@ -1,7 +1,7 @@
 {
- "code": 82,
- "name": "1.82",
- "notes": "New: Bengali day-part labels (morning/noon/evening/night) instead of AM/PM. New: total lock time on Home schedules card. New: confirmation before saving a very long schedule.",
- "notes_bn": "নতুন: এএম/পিএম-এর বদলে সকাল, দুপুর, বিকেল, সন্ধ্যা, রাত। হোমে শিডিউল কার্ডে আজকের মোট লক-সময়। অনেক দীর্ঘ শিডিউল সেভের আগে নিশ্চিতকরণ।",
- "sha256": "de797209b0e55b7b7576068e8076bd59e4e08ee80fce7aeb869dc42398d8804b"
+ "code": 85,
+ "name": "1.85",
+ "notes": "New: Bengali day-part labels (morning/noon/evening/night) instead of AM/PM across the app. New: total lock time on Home schedules card. New: confirmation before saving a very long lock or focus schedule.",
+ "notes_bn": "নতুন: পুরো অ্যাপে এএম/পিএম-এর বদলে সকাল, দুপুর, বিকেল, সন্ধ্যা, রাত। হোমে শিডিউল কার্ডে আজকের মোট লক-সময়। অনেক দীর্ঘ লক বা ফোকাস শিডিউল সেভের আগে নিশ্চিতকরণ।",
+ "sha256": "579443ce0acdf190427fd7727b08e8d8902f4a418c51773ab1257b188a6a3638"
 }
