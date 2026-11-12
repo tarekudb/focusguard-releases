@@ -1,7 +1,7 @@
 {
- "code": 85,
- "name": "1.85",
- "notes": "New: Bengali day-part labels (morning/noon/evening/night) instead of AM/PM across the app. New: total lock time on Home schedules card. New: confirmation before saving a very long lock or focus schedule.",
- "notes_bn": "নতুন: পুরো অ্যাপে এএম/পিএম-এর বদলে সকাল, দুপুর, বিকেল, সন্ধ্যা, রাত। হোমে শিডিউল কার্ডে আজকের মোট লক-সময়। অনেক দীর্ঘ লক বা ফোকাস শিডিউল সেভের আগে নিশ্চিতকরণ।",
- "sha256": "579443ce0acdf190427fd7727b08e8d8902f4a418c51773ab1257b188a6a3638"
+ "code": 89,
+ "name": "1.89",
+ "notes": "New: app PIN (4-8 digits) asked every time the app opens; change it any time with the old PIN; forgotten PIN needs a 30-day wait that can be cancelled. Fix: the Ultra power saving dialog is now cancelled automatically, also during a call.",
+ "notes_bn": "নতুন: অ্যাপ খুললেই পিন (৪–৮ সংখ্যা)। আগের পিন দিয়ে যেকোনো সময় বদলানো যায়। ভুলে গেলে ৩০ দিন অপেক্ষা, বাতিলও করা যায়। সংশোধন: আল্ট্রা সেভিং ডায়ালগ কল চলার সময়ও নিজে থেকে বাতিল হয়ে যায়।",
+ "sha256": "9d0a0ab8af5ef09fff7776436e8b9f2e74941232c38c5c5cacebe71aa84f4e18"
 }
