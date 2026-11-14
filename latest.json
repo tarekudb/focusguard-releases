@@ -1,7 +1,7 @@
 {
- "code": 89,
- "name": "1.89",
- "notes": "New: app PIN (4-8 digits) asked every time the app opens; change it any time with the old PIN; forgotten PIN needs a 30-day wait that can be cancelled. Fix: the Ultra power saving dialog is now cancelled automatically, also during a call.",
- "notes_bn": "নতুন: অ্যাপ খুললেই পিন (৪–৮ সংখ্যা)। আগের পিন দিয়ে যেকোনো সময় বদলানো যায়। ভুলে গেলে ৩০ দিন অপেক্ষা, বাতিলও করা যায়। সংশোধন: আল্ট্রা সেভিং ডায়ালগ কল চলার সময়ও নিজে থেকে বাতিল হয়ে যায়।",
- "sha256": "9d0a0ab8af5ef09fff7776436e8b9f2e74941232c38c5c5cacebe71aa84f4e18"
+ "code": 92,
+ "name": "1.92",
+ "notes": "New: app PIN (4-8 digits) asked every time the app opens; 30-day wait if forgotten. New: Community moved to the top of Settings; the Premium card moved to the top of Protection. Fix: the Ultra power saving dialog is now cancelled automatically, also during a call.",
+ "notes_bn": "নতুন: অ্যাপ খুললেই পিন (৪–৮ সংখ্যা), ভুলে গেলে ৩০ দিন অপেক্ষা। কমিউনিটি এখন সেটিংসের ওপরে, প্রিমিয়াম কার্ড সুরক্ষা ট্যাবের ওপরে। সংশোধন: আল্ট্রা সেভিং ডায়ালগ কল চলার সময়ও নিজে থেকে বাতিল হয়।",
+ "sha256": "f34832535bd91f8e48c776573b1552b4d43b00bcc171cfe57c338f2649986971"
 }
