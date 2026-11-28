@@ -1,7 +1,7 @@
 {
- "code": 95,
- "name": "1.95",
- "notes": "Fix: Mindful Entry reminder no longer appears before the chosen time ends when the phone clock changes or after a restart. Fix: the reminder no longer comes back again and again after 'Not now'. Improved: the DNS filter starts again by itself if it stops unexpectedly.",
- "notes_bn": "সংশোধন: ফোনের ঘড়ি বদলালে বা রিস্টার্টের পর মাইন্ডফুল এন্ট্রির রিং নির্ধারিত সময় শেষ হওয়ার আগে আর আসবে না। সংশোধন: 'এখন না' চাপার পর রিং বারবার ফিরে আসে না। উন্নতি: ডিএনএস ফিল্টার হঠাৎ বন্ধ হলে নিজে থেকে আবার চালু হয়।",
- "sha256": "729e4439e8a3c30be06f96777464fa362708d95ecaa447bc799fb1e9980850b0"
+ "code": 96,
+ "name": "1.96",
+ "notes": "New: when the app opens and a newer version exists, an update message appears (Update now / Later). The update check now also runs every time the app is opened.",
+ "notes_bn": "নতুন: অ্যাপ খুললে নতুন সংস্করণ থাকলে আপডেট বার্তা আসবে (এখনই আপডেট / পরে)। অ্যাপ খোলার সময়ও এখন আপডেট চেক হয়।",
+ "sha256": "e38c9324db14263697410366024d41475a269a26bbc86c67ea83b42e24a3d9a1"
 }
